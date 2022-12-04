@@ -367,6 +367,7 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
+    perf \
     usb
 
 # RCS
