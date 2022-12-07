@@ -368,7 +368,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
     perf \
-    usb
+    usb \
+    vibrator
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -427,13 +428,6 @@ PRODUCT_PACKAGES += \
 # Touchscreen
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
-
-# Vibrator
-PRODUCT_PACKAGES += \
-      vendor.qti.hardware.vibrator.service
-
-PRODUCT_COPY_FILES += \
-      vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
